@@ -11,13 +11,13 @@ Admin can assign orders requested by customers to delivery person.
 
 An endpoint from where customer can send
 1. [] Signup data /post
-2. [] Login data /post
-3. [] Order data /post
+1. [] Login data /post
+1. [] Order data /post
 
 An endpoint from where admin can
 
 1. [] assign the order to delivery person. /post
-2. [] see all orders /get
+1. [] see all orders /get
 
 An endpoint from where delivery person can
 
