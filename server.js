@@ -5,6 +5,7 @@ const customerRoutes = require('./routes/customer');
 const adminRoutes = require('./routes/admin');
 const deliveryPersonRoutes = require('./routes/deliveryPerson');
 const port = 9001; // it's over 9000
+const mongoose = require('mongoose');
 
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
