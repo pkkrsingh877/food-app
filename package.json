@@ -1,0 +1,24 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "Customers can login using phone number. They can send orders. Admin can assign order to a delivery person. That person will deliver the food to the person who ordered at the location that was mentioned. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "rest api",
+    "mongoose.js",
+    "mongodb",
+    "dotenv",
+    "express.js",
+    "bcrypt.js",
+    "jsonwebtoken",
+    "morgan",
+    "nodemon",
+    "postman"
+  ],
+  "author": "Prabhat Kumar",
+  "license": "ISC"
+}
