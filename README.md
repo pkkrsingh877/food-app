@@ -5,9 +5,10 @@ Admin can assign orders requested by customers to delivery person.
 
 # Todo Thingy
 
-1. [] Create a database with user collections.
-1. [] Customer Collections Should have name, phone number, role [user, admin, delivery person], user id, timestamps
+1. [X] Create a user collection.
+1. [X] Customer Collections Should have name, phone number, role [user, admin, delivery person], user id(will be added by default), timestamps
 1. [] Order can be done by Customer.
+1. [X] Create an item collection where item has name, address array and category
 
 An endpoint from where customer can send
 1. [] Signup data /post
