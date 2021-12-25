@@ -4,7 +4,7 @@ Admin can assign orders requested by customers to delivery person.
 
 
 # Todo Thingy
-
+1. [X] This app can serve html files now. Earlier the plan was to build api that take and stores data and sends data in json format. 
 1. [X] Create a user collection.
 1. [X] Customer Collections Should have name, phone number, role [user, admin, delivery person], user id(will be added by default), timestamps
 1. [] Order can be done by Customer.
