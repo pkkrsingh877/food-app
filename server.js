@@ -8,15 +8,22 @@ const port = 9001; // it's over 9000
 const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
+const ejs = require('ejs');
+const ejsMate = require('ejs-mate');
+const path = require('path');
 
 app.use(morgan('dev'));
-
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 app.use('/delivery', deliveryPersonRoutes);
 app.use('/customer', customerRoutes);
+
+//setting up ejs
+app.engine('ejs', ejsMate);
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 try {
     mongoose.connect('mongodb://localhost:27017/foodapp');
@@ -27,9 +34,7 @@ try {
 }
 
 app.get('/', (req, res) => {
-	res.json({
-		statusCode: 200,
-	});
+	res.render('index');
 });
 
 app.listen(port, () => {
