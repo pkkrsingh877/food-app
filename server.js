@@ -6,7 +6,12 @@ const adminRoutes = require('./routes/admin');
 const deliveryPersonRoutes = require('./routes/deliveryPerson');
 const port = 9001; // it's over 9000
 const mongoose = require('mongoose');
+const cors = require('cors');
+const morgan = require('morgan');
+app.use(morgan('dev'));
 
+app.use(cors());
+app.use(express.urlencoded({ extended: false }));
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 app.use('/delivery', deliveryPersonRoutes);

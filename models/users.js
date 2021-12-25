@@ -5,6 +5,12 @@ const userSchema = new mongoose.Schema(
 		username: {
 			type: String,
 			required: [true, 'username is required!'],
+			unique: true,
+			lowercase: true
+		},
+		name: {
+			type: String,
+			required: [true, 'name is required!'],
 		},
 		role: {
 			type: String,
@@ -15,6 +21,7 @@ const userSchema = new mongoose.Schema(
 			// for now let's store phone numbers as string
 			type: String,
 			required: [true, 'phone number is required!'],
+			unique: true
 		},
 		password: {
 			type: String,
