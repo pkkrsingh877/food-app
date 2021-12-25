@@ -13,7 +13,7 @@ router.post('/login', async (req, res) => {
 			password,
 		});
 		console.log(user);
-		res.json({
+		res.send({
 			statusCode: 200,
 			message: 'User was created successfully',
 		});
@@ -31,5 +31,6 @@ router.post('/signup', (req, res) => {
 		where: "on the auth'/signup route",
 	});
 });
+
 
 module.exports = router;
